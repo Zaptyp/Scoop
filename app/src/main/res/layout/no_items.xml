@@ -5,13 +5,13 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:layout_width="@dimen/no_crash_icon_size"
         android:layout_height="@dimen/no_crash_icon_size"
         android:layout_gravity="center_horizontal"
         app:srcCompat="@drawable/ic_bug_report" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/no_crash_item_spacing"
@@ -21,7 +21,7 @@
         android:textSize="@dimen/no_crash_text_size"
         android:textStyle="bold" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/no_crash_item_spacing"

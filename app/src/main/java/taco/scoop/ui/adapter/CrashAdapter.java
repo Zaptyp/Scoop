@@ -10,11 +10,12 @@ import android.text.style.ForegroundColorSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.imageview.ShapeableImageView;
+import com.google.android.material.textview.MaterialTextView;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -206,10 +207,10 @@ public class CrashAdapter extends RecyclerView.Adapter<CrashAdapter.CrashViewHol
     class CrashViewHolder extends RecyclerView.ViewHolder
             implements View.OnClickListener, View.OnLongClickListener {
 
-        final ImageView icon;
-        final TextView title;
+        final ShapeableImageView icon;
+        final MaterialTextView title;
         final RelativeTimeTextView time;
-        final TextView crashText;
+        final MaterialTextView crashText;
         final Drawable normalBackground;
         final ItemCrashBinding binding;
         Crash crash;

@@ -5,14 +5,14 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="@string/no_permission_1"
         android:textColor="?android:textColorSecondary" />
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:layout_width="@dimen/no_crash_icon_size"
         android:layout_height="@dimen/no_crash_icon_size"
         android:layout_gravity="center_horizontal"
@@ -20,7 +20,7 @@
         android:alpha="0.55"
         app:srcCompat="@drawable/ic_y_u_no" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/no_permission_item_spacing"

@@ -14,7 +14,7 @@
         android:layout_marginTop="?attr/actionBarSize"
         android:scrollbars="horizontal|vertical">
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/detail_crashLog_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

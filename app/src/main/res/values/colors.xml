@@ -2,8 +2,8 @@
 <resources>
     <color name="mainBackground">@android:color/white</color>
     <color name="colorPrimary">@color/mainBackground</color>
-    <color name="colorPrimaryDark">@color/mainBackground</color>
-    <color name="colorAccent">#4CAF50</color>
+    <color name="colorPrimaryVariant">@color/mainBackground</color>
+    <color name="colorSecondary">#4CAF50</color>
     <color name="colorEdgeEffect">@android:color/black</color>
 
     <color name="highlightColor">#70FF74</color>

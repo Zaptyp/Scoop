@@ -4,12 +4,13 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CheckBox;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.checkbox.MaterialCheckBox;
+import com.google.android.material.imageview.ShapeableImageView;
+import com.google.android.material.textview.MaterialTextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -95,10 +96,10 @@ public class AppAdapter extends RecyclerView.Adapter<AppAdapter.AppViewHolder> {
 
     class AppViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        final ImageView appIcon;
-        final TextView appName;
-        final TextView packageName;
-        final CheckBox check;
+        final ShapeableImageView appIcon;
+        final MaterialTextView appName;
+        final MaterialTextView packageName;
+        final MaterialCheckBox check;
         final ItemBlacklistBinding binding;
         App app;
 

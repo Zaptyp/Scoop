@@ -82,7 +82,7 @@ public class CrashReceiver extends BroadcastReceiver {
                     .setContentText(description)
                     .setPriority(NotificationCompat.PRIORITY_MAX)
                     .setDefaults(Notification.DEFAULT_VIBRATE)
-                    .setColor(ContextCompat.getColor(context, R.color.colorAccent))
+                    .setColor(ContextCompat.getColor(context, R.color.colorSecondary))
                     .setAutoCancel(true)
                     .setOnlyAlertOnce(true)
                     .setForegroundServiceBehavior(NotificationCompat.FOREGROUND_SERVICE_IMMEDIATE)

@@ -6,4 +6,5 @@
     <string name="no_permission_2" translatable="false">GRANT ADB PERMISSION OR ROOT ACCESS</string>
 
     <string name="settings_force_eng" translatable="false">Force English app language</string>
+    <string name="dummy_error">java.lang.RuntimeException: Dummy error</string>
 </resources>
