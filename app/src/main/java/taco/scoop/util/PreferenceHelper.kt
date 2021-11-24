@@ -56,10 +56,6 @@ object PreferenceHelper {
         return getSharedBoolean(R.string.prefKey_auto_wrap, false)
     }
 
-    fun autostartOnBoot(): Boolean {
-        return getSharedBoolean(R.string.prefKey_autostart_on_boot, false)
-    }
-
     @JvmStatic
     fun ignoreThreadDeath(): Boolean {
         return getSharedBoolean(R.string.prefKey_ignore_threaddeath, true)
@@ -83,6 +79,16 @@ object PreferenceHelper {
                 getKey(R.string.key_blacklisted_packages),
                 packages.joinToString(",")
             )
+        }
+    }
+
+    fun isServiceFabOn(): Boolean {
+        return getSharedBoolean(R.string.key_service_fab_state, false)
+    }
+
+    fun setServiceFabState(state: Boolean) {
+        sharedPreferences.edit {
+            putBoolean(getKey(R.string.key_service_fab_state), state)
         }
     }
 }
